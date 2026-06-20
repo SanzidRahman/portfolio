@@ -23,9 +23,9 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link
                         href="/"
-                        className="text-5xl font-bold tracking-tight"
+                        className="text-4xl font-bold tracking-tight"
                     >
-                        <span className="text-blue-600">San</span>zid
+                        <span className="text-blue-600">Sanzid</span>
                     </Link>
 
                     {/* Desktop Menu */}

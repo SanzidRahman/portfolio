@@ -103,21 +103,29 @@ export default function Hero() {
                     </motion.div>
 
                     {/* RIGHT IMAGE */}
+                    {/* RIGHT IMAGE */}
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.7 }}
                         className="flex items-center justify-center"
                     >
-                        <div className="relative h-80 w-80 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 p-1 sm:h-96 sm:w-96">
-                            <div className="relative h-full w-full overflow-hidden rounded-full bg-slate-900">
+                        {/* Outer glow / gradient card */}
+                        <div className="relative aspect-square w-80 sm:w-96">
+
+                            {/* Soft background gradient blob */}
+                            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 blur-2xl opacity-40" />
+
+                            {/* Main image container */}
+                            <div className="relative h-full w-full overflow-hidden rounded-3xl border border-slate-700/40 bg-slate-900 shadow-2xl">
+
                                 <Image
                                     src={image}
                                     alt="Portrait of Sanzid Rahman"
                                     fill
                                     priority
                                     sizes="(max-width: 768px) 80vw, 400px"
-                                    className="object-cover"
+                                    className="object-cover object-top"
                                 />
                             </div>
                         </div>
